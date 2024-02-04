@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Honk:MORF,SHLN@39,59.6&family=Single+Day&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Single+Day&display=swap" rel="stylesheet">
+  <title>volim ja tebe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+
+</head>
+<body> 
+  <p>
+    hos mi bit valentine♡
+  </p>
+
+  <div class="button-container"> 
+    <button id="yesButton">Ocu</button>
+    <button id="noButton">Mrs necu</button>
+  </div>
+  <script>
+    var noButton = document.getElementById("noButton");
+    var fontSize = 16; 
+    noButton.addEventListener("click", function() {
+     
+      fontSize *= 0.9;
+      noButton.style.fontSize = fontSize + "px";
+      
+    });
+  </script>
+  <script>
+    var noButton = document.getElementById("noButton");
+    var fontSize = 16; 
+    var hideThreshold = 10; 
+    noButton.addEventListener("click", function() {
+      
+      fontSize *= 0.9;
+
+     
+      noButton.style.fontSize = fontSize + "px";
+
+      if (fontSize <= hideThreshold) {
+    
+        noButton.style.display = "none";
+      }
+    });
+  </script>
+  <script>
+    var yesButton = document.getElementById("yesButton");
+    var noButton = document.getElementById("noButton");
+    function handleYesClick() {
+      alert("Tako treba volim i ja tebe <3");
+    }
+    function handleNoClick() {
+      
+    }
+    yesButton.addEventListener("click", handleYesClick);
+    noButton.addEventListener("click", handleNoClick);
+  </script>
+  
+  <img src="84b1de7a50ac24d0d5b8ba4a33bf1c64-removebg-preview.png" alt="betmen srce">
+</body>
+</html>
